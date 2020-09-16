@@ -46,8 +46,8 @@ body {
 .btn {
   border: none;
   font-family: "Montserrat", sans-serif;
-  font-weight: 800;
-  font-size: 1.0714285714vw;
+  font-weight: 600;
+  font-size: 1vw;
   line-height: 1.4285714286vw;
   text-align: center;
   text-transform: uppercase;
@@ -55,6 +55,9 @@ body {
   transition: all 0.2s;
   height: 4.2857142857vw;
   padding: 0 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .btn--orange {
   background: linear-gradient(91.83deg, #FF3D00 0%, #FFC700 100%), linear-gradient(91.83deg, #AD00FF 0%, #FF00C7 100%), #FFFFFF;
@@ -184,10 +187,6 @@ body {
 
 .prof__item-btn {
   margin-top: 1.4285714286vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-size: 1vw;
 }
 
 .prof__slider {
@@ -225,6 +224,66 @@ body {
 
 .slick-track {
   display: flex;
+}
+
+.form__inner {
+  padding: 4.2857142857vw 0;
+}
+
+.form__social {
+  margin-top: 1.0714285714vw;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 1.1428571429vw;
+  line-height: 1.4285714286vw;
+}
+.form__social a {
+  text-decoration: none;
+}
+
+.viber {
+  color: #894FFF;
+}
+
+.whatsapp {
+  color: #2FA84F;
+}
+
+.telegram {
+  color: #2A89CD;
+}
+
+.form__field {
+  margin: 1.7857142857vw -0.7142857143vw 0 -0.7142857143vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form__item {
+  width: 33.3%;
+  margin: 0 0.7142857143vw;
+}
+.form__item .form__name,
+.form__item .form__tel {
+  padding-left: 1.4285714286vw;
+  color: rgba(34, 34, 34, 0.5);
+  border: none;
+  width: 100%;
+  height: 4.2857142857vw;
+  background: linear-gradient(160.43deg, #E2EEFF 0%, rgba(230, 240, 255, 0.6) 100%);
+}
+.form__item .form__input {
+  width: 100%;
+  height: 4.2857142857vw;
+  border: none;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-size: 1vw;
+  line-height: 1.4285714286vw;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #FFFFFF;
 }
 
 /*# sourceMappingURL=style.css.map */

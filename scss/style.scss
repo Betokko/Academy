@@ -58,8 +58,8 @@ body{
     .btn {
         border: none;
         font-family: $font-2;
-        font-weight: 800;
-        font-size: vw(15);
+        font-weight: 600;
+        font-size: vw(14);
         line-height: vw(20);
         text-align: center;
         text-transform: uppercase;
@@ -68,6 +68,10 @@ body{
 
         height: vw(60);
         padding: 0 25px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
 
         &--orange{
@@ -216,11 +220,8 @@ body{
 }
 .prof__item-btn{
     margin-top: vw(20);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 
-    font-size: vw(14);
+
 
 }
 
@@ -242,7 +243,7 @@ body{
         border: none;
         background-color: transparent;
         padding: 0;
-        
+
         &:hover{
             opacity: 0.5;
         }
@@ -262,7 +263,75 @@ body{
     display: flex;
 }
 
+// form 
+.form {
+}
 
+.form__inner {
+    padding: vw(60) 0;
+
+}
+.form__title {
+}
+
+.form__social {
+    margin-top: vw(15);
+    font-family: $font-2;
+    font-weight: bold;
+    font-size: vw(16);
+    line-height: vw(20);
+
+    a{
+        text-decoration: none;
+    }
+}
+.viber {
+    color: #894FFF;
+}
+.whatsapp {
+    color: #2FA84F;
+}
+.telegram {
+    color: #2A89CD;
+}
+.form__field {
+    margin: vw(25) vw(-10) 0 vw(-10);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.form__item {
+    width: 33.3%;
+    margin: 0 vw(10);
+    .form__name,
+    .form__tel{
+        padding-left: vw(20);
+        color: rgba(34, 34, 34, 0.5);
+        border: none;
+        width: 100%;
+        height: vw(60);
+        background: linear-gradient(160.43deg, #E2EEFF 0%, rgba(230, 240, 255, 0.6) 100%);
+    }
+    .form__input{
+        width: 100%;
+        height: vw(60);
+        border: none;
+        font-family: $font-1;
+        font-weight: 600;
+        font-size: vw(14);
+        line-height: vw(20);
+        letter-spacing: 0.01em;
+
+        text-align: center;
+        color: #FFFFFF;
+
+
+
+
+    }
+
+}
 
 
 
