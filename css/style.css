@@ -1,3 +1,230 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1vw;
+  line-height: 1.4285714286vw;
+  color: #222222;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+.container {
+  width: 84.2857142857vw;
+  margin: 0 auto;
+}
+
+.headline {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 3.2142857143vw;
+  line-height: 3.5714285714vw;
+}
+
+.title {
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-size: 1.7142857143vw;
+  line-height: 2.1428571429vw;
+}
+
+.text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 1.1428571429vw;
+  line-height: 1.4285714286vw;
+  color: #222222;
+}
+
+.btn {
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 1.0714285714vw;
+  line-height: 1.4285714286vw;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  transition: all 0.2s;
+  height: 4.2857142857vw;
+  padding: 0 25px;
+}
+.btn--orange {
+  background: linear-gradient(91.83deg, #FF3D00 0%, #FFC700 100%), linear-gradient(91.83deg, #AD00FF 0%, #FF00C7 100%), #FFFFFF;
+  box-shadow: 0px 16px 24px rgba(243, 170, 24, 0.16), 0px 6px 12px rgba(243, 170, 24, 0.16);
+}
+
+.header {
+  background-image: url("../images/lines.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2.8571428571vw;
+}
+
+.header__mid {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 7.1428571429vw;
+}
+.header__mid .btn {
+  margin-top: 1.4285714286vw;
+}
+.header__mid .title {
+  margin-top: 2.8571428571vw;
+}
+
+.header__title {
+  width: 50%;
+}
+
+.video {
+  width: 50%;
+}
+.video img {
+  width: 100%;
+}
+
+.header__bot {
+  display: flex;
+  margin-top: 4.2857142857vw;
+}
+
+.header__bot-item {
+  width: 25%;
+  display: flex;
+  margin-right: 2.8571428571vw;
+}
+.header__bot-item:last-child {
+  margin-right: 0;
+}
+
+.header__advantages {
+  width: 2.8571428571vw;
+  height: 2.8571428571vw;
+  margin-right: 0.7142857143vw;
+}
+.header__advantages img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+}
+
+.prof {
+  margin-top: 5.7142857143vw;
+  background: linear-gradient(160.43deg, #F3E7E9 0%, #E3EEFF 100%);
+}
+
+.prof__inner {
+  padding: 2.8571428571vw 0;
+  position: relative;
+}
+
+.prof__inner::before {
+  content: "<h2>";
+  position: absolute;
+  top: -1.2142857143vw;
+  left: 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 800;
+  font-size: 5.1428571429vw;
+  line-height: 6vw;
+  text-transform: uppercase;
+  color: rgba(137, 79, 255, 0.1);
+}
+
+.prof__item {
+  padding: 1.4285714286vw;
+  background-color: #fff;
+  margin: 0 0.7142857143vw;
+}
+
+.prof__item-img {
+  margin: -1.4285714286vw -1.4285714286vw 0 -1.4285714286vw;
+}
+.prof__item-img img {
+  display: block;
+  width: 100%;
+}
+
+.prof__item-name {
+  margin-top: 1.4285714286vw;
+}
+
+.prof__item-descr {
+  margin-top: 1.0714285714vw;
+}
+
+.prof__item-date {
+  margin-top: 1.0714285714vw;
+  font-size: 1vw;
+}
+
+.prof__item-cost {
+  margin-top: 1.4285714286vw;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  line-height: 2.1428571429vw;
+  font-size: 1.1428571429vw;
+}
+.prof__item-cost span {
+  font-size: 1.4285714286vw;
+}
+
+.prof__item-btn {
+  margin-top: 1.4285714286vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1vw;
+}
+
+.prof__slider {
+  position: relative;
+  margin: 0 -0.7142857143vw;
+}
+.prof__slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  transform: translateY(-50%);
+  font-size: 0;
+  background-image: url("../images/arrow.svg");
+  background-repeat: no-repeat;
+  width: 1.4285714286vw;
+  height: 0.5714285714vw;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+.prof__slider .slick-arrow:hover {
+  opacity: 0.5;
+}
+.prof__slider .slick-prev {
+  left: -2.8571428571vw;
+}
+.prof__slider .slick-next {
+  right: -2.8571428571vw;
+  transform: rotate(180deg);
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: flex;
+}
 
 /*# sourceMappingURL=style.css.map */
