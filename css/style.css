@@ -291,19 +291,15 @@ body {
   background: linear-gradient(164.74deg, #FEF7DF 0%, #F0DCCB 100%), linear-gradient(164.74deg, #FFECBC 0%, #BEEEF0 100%), linear-gradient(160.43deg, #E3EEFF 0%, #F3E7E9 100%);
 }
 
-.advantage__inner {
-  padding: 2.8571428571vw 0 2.8571428571vw 0;
-}
-
 .advantage__inner::before {
   content: "<section>";
   position: absolute;
-  top: -1.0714285714vw;
+  top: 0;
   font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 800;
-  font-size: 70px;
-  line-height: 84px;
+  font-size: 5vw;
+  line-height: 3.5714285714vw;
   text-transform: uppercase;
   color: rgba(253, 160, 133, 0.12);
 }
@@ -311,6 +307,7 @@ body {
 .advantage__inner::after {
   content: "advantage-block {}";
   position: absolute;
+  padding: 0;
   top: 8.2142857143vw;
   font-family: "Lato", sans-serif;
   font-weight: 800;
@@ -323,12 +320,14 @@ body {
 
 .advantage__title {
   width: 66%;
+  padding-top: 2.8571428571vw;
 }
 
 .advantage__items {
   display: flex;
   flex-wrap: wrap;
   margin: 2.8571428571vw -0.7142857143vw 0 -0.7142857143vw;
+  padding-bottom: 2.8571428571vw;
 }
 
 .advantage__item {
@@ -340,6 +339,165 @@ body {
 
 .advantage__item-desr {
   margin-top: 0.7142857143vw;
+}
+
+.testimonials__inner {
+  padding: 4.2857142857vw 0;
+}
+
+.testimonials__item {
+  margin: 1.4285714286vw 0.7142857143vw 0 0.7142857143vw;
+  padding: 1.4285714286vw;
+  text-align: center;
+  background: linear-gradient(160.43deg, #F3E7E9 0%, #E3EEFF 100%), #FFFFFF;
+}
+
+.testimonials__photo {
+  width: 100%;
+  height: auto;
+}
+
+.testimonials__photo img {
+  width: 7.1428571429vw;
+  height: 7.1428571429vw;
+}
+
+.testimonials__photo::before,
+.testimonials__photo::after {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 5vw;
+  line-height: 6vw;
+  text-align: center;
+  text-transform: uppercase;
+  color: #894FFF;
+  opacity: 0.1;
+  vertical-align: middle;
+}
+
+.testimonials__photo::before {
+  content: "<";
+}
+
+.testimonials__photo::after {
+  content: ">";
+}
+
+.testimonials__name {
+  margin-top: 0.7142857143vw;
+}
+
+.testimonials__prof {
+  font-family: "Lato", sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 0.3571428571vw;
+}
+
+.testimonials__review {
+  margin-top: 1.0714285714vw;
+}
+
+.testimonials__works {
+  margin-top: 3.2142857143vw;
+  color: #5693FF;
+}
+
+.testimonials__slider {
+  position: relative;
+  margin: 0 -0.7142857143vw;
+}
+
+.testimonials__slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  transform: translateY(-50%);
+  font-size: 0;
+  background-image: url("../images/arrow.svg");
+  background-repeat: no-repeat;
+  width: 1.4285714286vw;
+  height: 0.5714285714vw;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.testimonials__slider .slick-arrow:hover {
+  opacity: 0.5;
+}
+
+.testimonials__slider .slick-prev {
+  left: -2.8571428571vw;
+}
+
+.testimonials__slider .slick-next {
+  right: -2.8571428571vw;
+  transform: rotate(180deg);
+}
+
+.about {
+  position: relative;
+  margin-top: 4.2857142857vw;
+}
+
+.about__inner::before {
+  content: ".about {}";
+  font-family: "Lato", sans-serif;
+  font-weight: 800;
+  font-size: 5vw;
+  line-height: 3.5714285714vw;
+  text-transform: uppercase;
+  color: rgba(137, 79, 255, 0.1);
+  position: absolute;
+  top: -3.2142857143vw;
+}
+
+.about__content {
+  display: flex;
+  margin: 3.2142857143vw 0;
+}
+
+.about__items {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about__item {
+  display: flex;
+  width: 50%;
+}
+
+.about__item:nth-child(3),
+.about__item:nth-child(4) {
+  margin-top: 5.7142857143vw;
+}
+
+.about__item-img {
+  width: 2.8571428571vw;
+  height: 2.8571428571vw;
+  margin-right: 1.4285714286vw;
+}
+.about__item-img img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about__descr {
+  width: 50%;
+  padding-left: 0.7142857143vw;
+}
+.about__descr a {
+  color: #5693FF;
+  text-decoration: none;
+}
+.about__descr--name {
+  margin: 1.0714285714vw 0;
 }
 
 /*# sourceMappingURL=style.css.map */

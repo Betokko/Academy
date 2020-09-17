@@ -1,0 +1,10 @@
+<svg width="42" height="32" viewBox="0 0 42 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.8667 1H39C40.0667 1 41 2.01449 41 3.17391V28.8261C41 29.9855 40.0667 31 39 31H3C1.93333 31 1 29.9855 1 28.8261V10.1304" stroke="#222222" stroke-width="2" stroke-miterlimit="22.9256" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M27.1333 1H3C1.93333 1 0.999999 2.01449 0.999999 3.17391V28.8261C0.999999 29.9855 1.93333 31 3 31H39C40.0667 31 41 29.9855 41 28.8261V10.1304" stroke="#222222" stroke-width="2" stroke-miterlimit="22.9256" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7.60575 1H19.1023C19.6104 1 20.0551 1.44462 20.0551 1.95275V13.1952C20.0551 13.7034 19.6104 14.148 19.1023 14.148H1.95275C1.44462 14.148 1 13.7034 1 13.1952V5.00156" stroke="#222222" stroke-width="2" stroke-miterlimit="22.9256" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M13.4494 1H1.95288C1.44474 1 1.00012 1.44462 1.00012 1.95275V13.1952C1.00012 13.7034 1.44474 14.148 1.95288 14.148H19.1024C19.6106 14.148 20.0552 13.7034 20.0552 13.1952V5.00156" stroke="#222222" stroke-width="2" stroke-miterlimit="22.9256" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="21.0552" y1="7" x2="40.0552" y2="7" stroke="#222222" stroke-width="2"/>
+<line x1="20.0552" y1="13" x2="40.0552" y2="13" stroke="#222222" stroke-width="2"/>
+<line x1="1.05518" y1="19" x2="40.0552" y2="19" stroke="#222222" stroke-width="2"/>
+<line x1="1.05518" y1="25" x2="40.0552" y2="25" stroke="#222222" stroke-width="2"/>
+</svg>

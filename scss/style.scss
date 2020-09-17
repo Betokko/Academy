@@ -341,18 +341,18 @@ body{
 .container {
 }
 .advantage__inner {
-    padding: vw(40) 0 vw(40) 0;
 }
 .advantage__inner::before{
     content: "<section>";
     position: absolute;
-    top: vw(-15);
+    top: 0;
+
 
     font-family: $font-1;
     font-style: normal;
     font-weight: 800;
-    font-size: 70px;
-    line-height: 84px;
+    font-size: vw(70);
+    line-height: vw(50);
     text-transform: uppercase;
 
     color: rgba(253, 160, 133, 0.12);
@@ -361,7 +361,9 @@ body{
 .advantage__inner::after{
     content: "advantage-block {}";
     position: absolute;
+    padding: 0;
     top: vw(115);
+
     font-family: $font-1;
     font-weight: 800;
     font-size: vw(30);
@@ -374,14 +376,16 @@ body{
     }
 .advantage__title {
     width: 66%;
+    padding-top: vw(40);
 }
-.title {
-}
+
 .advantage__items {
     display: flex;
     flex-wrap: wrap;
     margin: vw(40) vw(-10) 0 vw(-10);
+    padding-bottom: vw(40);
 }
+
 .advantage__item {
     width: 32%;
     background-color: #fff;
@@ -393,6 +397,194 @@ body{
 .advantage__item-desr {
     margin-top: vw(10);
 }
+
+// testimonials 
+.testimonials {
+}
+.testimonials__inner {
+    padding: vw(60) 0;
+}
+.testimonials__title {
+}
+.title {
+}
+.testimonials__items {
+}
+.testimonials__slider {
+}
+.testimonials__item {
+    margin: vw(20) vw(10) 0 vw(10);
+    padding: vw(20);
+    text-align: center;
+    background: linear-gradient(160.43deg, #F3E7E9 0%, #E3EEFF 100%), #FFFFFF;
+}
+.testimonials__photo {
+    width: 100%;
+    height: auto;
+
+
+}
+.testimonials__photo img {
+    width: vw(100);
+    height: vw(100);
+    
+
+}
+
+.testimonials__photo::before,
+.testimonials__photo::after{
+    font-family: $font-1;
+    font-style: normal;
+    font-weight: 800;
+    font-size: vw(70);
+    line-height: vw(84);
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #894FFF;
+
+    opacity: 0.1;
+    vertical-align: middle;
+
+
+
+}
+
+.testimonials__photo::before {
+    content: "<";
+}
+.testimonials__photo::after {
+    content: ">";
+}
+.testimonials__name {
+    margin-top: vw(10);
+}
+.testimonials__prof {
+    font-family: $font-1;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: vw(5);
+}
+.testimonials__review {
+    margin-top: vw(15);
+}
+.testimonials__works {
+    margin-top: vw(45);
+    color: #5693FF;
+}
+
+// testimonals slider 
+
+.testimonials__slider {
+    position: relative;
+    margin: 0 vw(-10);
+  }
+  .testimonials__slider .slick-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    transform: translateY(-50%);
+    font-size: 0;
+    background-image: url("../images/arrow.svg");
+    background-repeat: no-repeat;
+    width: vw(20);
+    height: vw(8);
+    border: none;
+    background-color: transparent;
+    padding: 0;
+  }
+  .testimonials__slider .slick-arrow:hover {
+    opacity: 0.5;
+  }
+  .testimonials__slider .slick-prev {
+    left: vw(-40);
+  }
+  .testimonials__slider .slick-next {
+    right: vw(-40);
+    transform: rotate(180deg);
+  }
+
+// about 
+
+.about {
+    position: relative;
+    margin-top: vw(60);
+}
+.about__inner {
+}
+.about__inner::before {
+    content: ".about {}";
+    font-family: $font-1;
+    font-weight: 800;
+    font-size: vw(70);
+    line-height: vw(50);
+    text-transform: uppercase;
+
+    color: rgba(137, 79, 255, 0.1);
+    position: absolute;
+    top: vw(-45);
+}
+.about__title {
+}
+.title {
+}
+.about__content {
+    display: flex;
+    margin: vw(45) 0;
+}
+.about__items {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.about__item {
+    display: flex;
+    width: 50%;
+}
+.about__item:nth-child(3),
+.about__item:nth-child(4) {
+    margin-top: vw(80);
+}
+.about__item-img {
+    width: vw(40);
+    height: vw(40);
+    margin-right: vw(20);
+    img{
+        display: block;
+        height: 100%;
+        object-fit: cover;
+    }
+
+}
+
+.about__item-descr {
+
+}
+
+
+
+.about__descr{
+    width: 50%;
+    padding-left: vw(10);
+
+    a {
+        color: #5693FF;
+        text-decoration: none;
+    }
+    &--name{
+        margin: vw(15) 0;
+    }
+
+}
+
+
+
+
+
+
+
 
 
 
