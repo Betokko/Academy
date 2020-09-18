@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    // slider 
     $('.prof__slider').slick({
         infinite: true,
         slidesToShow: 4,
@@ -16,5 +17,11 @@ $(document).ready(function(){
         autoplay: true,
         autoplaySpeed: 2000
       });
-          
+    
+    //   menu 
+      $('.burger').click(function(event) {
+        $('.burger,.nav').toggleClass('active');
+        $('body').toggleClass('fixed');
+      })
+
   });

@@ -8,6 +8,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/lightbox.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
     <title>DL Academy</title>
@@ -24,8 +25,21 @@
                             <img src="images/logo.png" alt="">
                         </div>
                         <div class="burger">
-                            <img src="images/burger.svg" alt="">
+                            <span></span>
                         </div>
+                        <nav class="nav">
+                            <ul class="nav__list">
+                                <li class="nav__item"><a class="text" href="##">Курс по SEO</a></li>
+                                <li class="nav__item"><a class="text" href="##">Курс по Frontend</a></li>
+                                <li class="nav__item"><a class="text" href="##">Курс по Backend</a></li>
+                                <li class="nav__item"><a class="text" href="##">Digital для руководителей</a></li>
+                                <li class="nav__item"><a class="text" href="##">О нас</a></li>
+                                <li class="nav__item"><a class="text" href="##">Контакты</a></li>
+                                <li class="nav__item"><a class="text" href="##">Блог</a></li>
+                                <li class="nav__item"><a class="text" href="##">Онлайн оплата</a></li>
+                            </ul>
+                            <div class="nav__btn btn btn--orange">Запишись на бесплатное занятие</div>
+                        </nav>
                     </div>
 
                     <div class="header__mid">
@@ -359,7 +373,8 @@
                     </div>
                 </div>
             </div>
-        </div> <!--about-->
+        </div>
+        <!--about-->
 
         <div class="photo">
             <div class="container">
@@ -386,13 +401,14 @@
                 </div>
 
             </div>
-        </div> <!--photo-->
+        </div>
+        <!--photo-->
 
         <div class="form form--second">
             <div class="container">
                 <div class="form__inner form__inner--second">
                     <div class="form__title title">
-                        Освой новую профессию                    
+                        Освой новую профессию
                     </div>
                     <div class="text">
                         и стань востребованным независимо от обстоятельств!
@@ -402,23 +418,27 @@
                         <div class="form__field">
                             <div class="form__item">
                                 <label for="name"></label>
-                                <input class="form__name form__name--second" type="text" id="name" name="name" placeholder="Имя" required>
+                                <input class="form__name form__name--second" type="text" id="name" name="name"
+                                    placeholder="Имя" required>
                             </div>
                             <div class="form__item">
                                 <label for="tel"></label>
-                                <input class="form__tel form__tel--second" type="tel" name="tel" placeholder="Телефон" required>
+                                <input class="form__tel form__tel--second" type="tel" name="tel" placeholder="Телефон"
+                                    required>
                             </div>
                             <div class="form__item">
                                 <input class="form__input  btn--orange" type="submit" value="получить">
                             </div>
                         </div>
                     </form>
-                    <div class="form__descr--second">Оставляя заявку на сайте, Вы соглашаетесь на <a href="##">обработку персональных данных. </a></div>
+                    <div class="form__descr--second">Оставляя заявку на сайте, Вы соглашаетесь на <a href="##">обработку
+                            персональных данных. </a></div>
 
 
                 </div>
             </div>
-        </div> <!--form--second-->
+        </div>
+        <!--form--second-->
 
         <div class="map">
             <div class="container">
@@ -432,16 +452,129 @@
                             г. Тольятти, проспект Степана Разина, 44. 7-й квартал, Автозаводский район
                         </div>
                         <div class="map__head-descr">
-                            Несколько занятий в неделю проходят в оборудованных классах. Остальное время ты учишься онлайн.
+                            Несколько занятий в неделю проходят в оборудованных классах. Остальное время ты учишься
+                            онлайн.
                         </div>
                     </div>
                 </div>
 
                 <div class="map__item">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1995.0547812719858!2d49.29215957899436!3d53.512531131266925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41687981eb958267%3A0x6ccac75f60f1136c!2z0JDQstGC0L7Qt9Cw0LLQvtC00YHQutC40Lkg0YAt0L0sINCi0L7Qu9GM0Y_RgtGC0LgsINCh0LDQvNCw0YDRgdC60LDRjyDQvtCx0LsuLCA0NDUwMjc!5e0!3m2!1sru!2sru!4v1600345956743!5m2!1sru!2sru" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1995.0547812719858!2d49.29215957899436!3d53.512531131266925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41687981eb958267%3A0x6ccac75f60f1136c!2z0JDQstGC0L7Qt9Cw0LLQvtC00YHQutC40Lkg0YAt0L0sINCi0L7Qu9GM0Y_RgtGC0LgsINCh0LDQvNCw0YDRgdC60LDRjyDQvtCx0LsuLCA0NDUwMjc!5e0!3m2!1sru!2sru!4v1600345956743!5m2!1sru!2sru"
+                        width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe>
+                </div>
+
+                <div class="gallery">
+
+                    <div class="gallery__item">
+                        <a href="images/gallery/1.jpg" data-lightbox="lbox">
+                            <img src="images/gallery/1.jpg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="gallery__item">
+                        <a href="images/gallery/2.jpg" data-lightbox="lbox">
+                            <img src="images/gallery/2.jpg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="gallery__item">
+                        <a href="images/gallery/3.jpg" data-lightbox="lbox">
+                            <img src="images/gallery/3.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="gallery__item">
+                        <a href="images/gallery/1.jpg" data-lightbox="lbox">
+                            <img src="images/gallery/1.jpg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="gallery__item">
+                        <a href="images/gallery/2.jpg" data-lightbox="lbox">
+                            <img src="images/gallery/2.jpg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="gallery__item">
+                        <a href="images/gallery/3.jpg" data-lightbox="lbox">
+                            <img src="images/gallery/3.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="gallery__item">
+                        <a href="images/gallery/1.jpg" data-lightbox="lbox">
+                            <img src="images/gallery/1.jpg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="gallery__item">
+                        <a href="images/gallery/2.jpg" data-lightbox="lbox">
+                            <img src="images/gallery/2.jpg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="gallery__item">
+                        <a href="images/gallery/3.jpg" data-lightbox="lbox">
+                            <img src="images/gallery/3.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="gallery__item">
+                        <a href="images/gallery/1.jpg" data-lightbox="lbox">
+                            <img src="images/gallery/1.jpg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="gallery__item">
+                        <a href="images/gallery/2.jpg" data-lightbox="lbox">
+                            <img src="images/gallery/2.jpg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="gallery__item">
+                        <a href="images/gallery/3.jpg" data-lightbox="lbox">
+                            <img src="images/gallery/3.jpg" alt="">
+                        </a>
+                    </div>
+
                 </div>
 
 
+
+
+
+
+
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="container">
+                <div class="footer__contacts">
+                    <div class="footer__soc">
+                        <div class="footer__soc-vk">
+                            <img src="images/soc/1.svg" alt="">
+                        </div>
+                        <div class="footer__soc-inst">
+                            <img src="images/soc/2.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="footer__address">
+                        <a class="dl-link" href="##">www.directlinedev.com</a>
+                        <a class="dl-link" href="##">academy@directline.digital</a>
+                        <a class="tel" href="tel:*100#">(720)297-1159</a>
+                    </div>
+                </div>
+
+                <div class="footer__copy">
+                    <div class="footer__copy-info">
+                        <p>Соглашение</p>
+                        <p>Конфиденциальность</p>
+                        <p>Сведения об образовательной организации</p>
+                    </div>
+                    <div class="footer__copy-dl">
+                        Web Design — Direct Line Development
+                    </div>
+                </div>
 
 
             </div>
@@ -456,6 +589,7 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
