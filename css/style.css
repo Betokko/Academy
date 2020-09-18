@@ -226,6 +226,11 @@ body {
   display: flex;
 }
 
+.form--second {
+  margin-bottom: 1.0714285714vw;
+  background: linear-gradient(164.74deg, #FFECBC 0%, #BEEEF0 100%), linear-gradient(160.43deg, #E3EEFF 0%, #F3E7E9 100%);
+}
+
 .form__inner {
   padding: 4.2857142857vw 0;
 }
@@ -273,6 +278,10 @@ body {
   height: 4.2857142857vw;
   background: linear-gradient(160.43deg, #E2EEFF 0%, rgba(230, 240, 255, 0.6) 100%);
 }
+.form__item .form__name--second,
+.form__item .form__tel--second {
+  background: #fff;
+}
 .form__item .form__input {
   width: 100%;
   height: 4.2857142857vw;
@@ -305,7 +314,7 @@ body {
 }
 
 .advantage__inner::after {
-  content: "advantage-block {}";
+  content: ".advantage-block {}";
   position: absolute;
   padding: 0;
   top: 8.2142857143vw;
@@ -392,8 +401,8 @@ body {
   font-family: "Lato", sans-serif;
   font-style: italic;
   font-weight: 300;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 1vw;
+  line-height: 1.4285714286vw;
   margin-top: 0.3571428571vw;
 }
 
@@ -498,6 +507,82 @@ body {
 }
 .about__descr--name {
   margin: 1.0714285714vw 0;
+}
+
+.photo__inner {
+  padding: 4.2857142857vw 0;
+}
+
+.photo__descr {
+  margin-top: 1.0714285714vw;
+}
+
+.photo__items {
+  margin: 1.7857142857vw -0.7142857143vw 0 -0.7142857143vw;
+  display: flex;
+}
+
+.photo__item {
+  width: 33%;
+  margin: 0 0.7142857143vw;
+}
+.photo__item .photo__img {
+  width: 27.1428571429vw;
+  height: 23.2142857143vw;
+}
+.photo__item .photo__img img {
+  display: block;
+  width: 100%;
+}
+
+.form--second .text {
+  margin-top: 1.0714285714vw;
+}
+
+.form__descr--second {
+  margin-top: 1.4285714286vw;
+  opacity: 0.5;
+}
+.form__descr--second a {
+  color: #222222;
+}
+
+.form__inner--second {
+  position: relative;
+  overflow: hidden;
+}
+
+.form__inner--second::before {
+  content: "</form>";
+  font-family: "Lato", sans-serif;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-weight: 800;
+  font-size: 5vw;
+  line-height: 3.5714285714vw;
+  text-transform: uppercase;
+  color: #5693FF;
+  opacity: 0.1;
+}
+
+.map__head {
+  display: flex;
+  margin-top: 4.2857142857vw;
+}
+
+.map__head-title,
+.map__head-data {
+  width: 50%;
+  padding-right: 7.1428571429vw;
+}
+
+.map__head-descr {
+  margin-top: 1.0714285714vw;
+}
+
+.map__item {
+  margin-top: 3.9285714286vw;
 }
 
 /*# sourceMappingURL=style.css.map */
