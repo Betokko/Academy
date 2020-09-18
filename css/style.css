@@ -773,6 +773,14 @@ body {
   margin-right: 1.4285714286vw;
   cursor: pointer;
   transition: all 0.2s;
+  width: 2.8571428571vw;
+  height: 2.8571428571vw;
+}
+.footer__soc-vk img,
+.footer__soc-inst img {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .footer__soc-vk:hover,
@@ -829,6 +837,42 @@ body {
 
 .footer__copy-dl {
   opacity: 0.5;
+}
+
+@media (max-width: 1024px) {
+  body {
+    font-size: 4.375vmin;
+    line-height: 6.25vmin;
+  }
+
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .headline {
+    font-size: 14.0625vmin;
+    line-height: 15.625vmin;
+  }
+
+  .title {
+    font-size: 7.5vmin;
+    line-height: 9.375vmin;
+  }
+
+  .text {
+    font-size: 5vmin;
+    line-height: 6.25vmin;
+  }
+
+  .header__title,
+.video {
+    width: 100%;
+  }
+
+  .header__bot-item {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
