@@ -68,7 +68,6 @@ body{
         text-align: center;
         text-transform: uppercase;
         color: #FFFFFF;
-        transition: all 0.2s;
 
         height: vw(60);
         padding: 0 25px;
@@ -79,11 +78,17 @@ body{
 
 
 
+
         &--orange{
-            
+            cursor: pointer;
+            position: relative;
+            transition: .3s;
             background: linear-gradient(91.83deg, #FF3D00 0%, #FFC700 100%), linear-gradient(91.83deg, #AD00FF 0%, #FF00C7 100%), #FFFFFF;
             box-shadow: 0px 16px 24px rgba(243, 170, 24, 0.16), 0px 6px 12px rgba(243, 170, 24, 0.16);
+                        
         }
+
+
     }
 
 
@@ -100,6 +105,7 @@ body{
 // header top 
 .header__top {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding-top: vw(40);
 }
@@ -136,9 +142,15 @@ body{
         z-index: 20;
     }
 
-
     &__item{
         margin-bottom: vw(15);
+    }
+    .text{
+        font-size: vw(18);
+        transition: all 0.3s;
+        &:hover{
+            opacity: 0.5;
+        }
     }
 }
 .nav::before{
@@ -231,6 +243,8 @@ body{
 // header mid 
 .header__mid {
     display: flex;
+    flex-wrap: wrap;
+
     justify-content: space-between;
 
     margin-top: vw(100);
@@ -260,10 +274,11 @@ body{
 // header bot 
 .header__bot {
     display: flex;
+    flex-wrap: wrap;
     margin-top: vw(60);
 }
 .header__bot-item {
-    width: 25%;
+    width: 22%;
     display: flex;
     margin-right: vw(40);
     &:last-child{
@@ -428,12 +443,13 @@ body{
 .form__field {
     margin: vw(25) vw(-10) 0 vw(-10);
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 
 }
 .form__item {
-    width: 33.3%;
+    width: 31%;
     margin: 0 vw(10);
     .form__name,
     .form__tel{
@@ -676,6 +692,7 @@ body{
 }
 .about__content {
     display: flex;
+    flex-wrap: wrap;
     margin: vw(45) 0;
 }
 .about__items {
@@ -685,6 +702,7 @@ body{
 }
 .about__item {
     display: flex;
+    flex-wrap: wrap;
     width: 50%;
 }
 .about__item:nth-child(3),
@@ -737,9 +755,11 @@ body{
 .photo__items {
     margin: vw(25) vw(-10) 0 vw(-10);
     display: flex;
+    flex-wrap: wrap;
+
 }
 .photo__item {
-    width: 33%;
+    width: 31%;
     margin: 0 vw(10);
     .photo__img{
         width: vw(380);
@@ -793,6 +813,7 @@ body{
 }
 .map__head {
     display: flex;
+    flex-wrap: wrap;
     margin-top: vw(60);
 }
 .map__head-title,
@@ -861,10 +882,12 @@ body{
 }
 .footer__contacts {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .footer__soc {
     display: flex;
+    flex-wrap: wrap;
     width: 33%;
 }
 .footer__soc-vk,
@@ -880,12 +903,13 @@ body{
 .footer__address {
     color: #5693FF;
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-end;
     align-items: center;
     width: 66%;
 
     .dl-link{
-        width: vw(300);
+        width: vw(280);
         font-family: $font-2;
         font-style: normal;
         font-weight: bold;
@@ -913,12 +937,16 @@ body{
 }
 .footer__copy {
     display: flex;
+    flex-wrap: wrap;
+
     justify-content: space-between;
     color: #ffffff;
     margin-top: vw(40);
 }
 .footer__copy-info {
     display: flex;
+    flex-wrap: wrap;
+
     p{
         margin-right: vw(40);
     }
