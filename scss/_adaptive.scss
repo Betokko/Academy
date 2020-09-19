@@ -231,6 +231,8 @@
     }
     .slick-slide{
         opacity: 0.5;
+        transition: all 0.3s;
+
     }
     .slick-slide.slick-current{
         opacity: 1;
