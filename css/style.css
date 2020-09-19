@@ -656,13 +656,10 @@ body {
 }
 
 .photo__items {
-  margin: 1.7857142857vw -0.7142857143vw 0 -0.7142857143vw;
-  display: flex;
-  flex-wrap: wrap;
+  margin: 1.7857142857vw -0.7142857143vw;
 }
 
 .photo__item {
-  width: 31%;
   margin: 0 0.7142857143vw;
 }
 .photo__item .photo__img {
@@ -849,9 +846,9 @@ body {
   opacity: 0.5;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
   body {
-    font-size: 4.375vmin;
+    font-size: 3.75vmin;
     line-height: 6.25vmin;
   }
 
@@ -895,11 +892,10 @@ body {
 
   .btn {
     font-family: "Lato", sans-serif;
-    font-size: 4.0625vmin;
-    line-height: 15vmin;
+    font-size: 4.375vmin;
+    line-height: 6.25vmin;
     height: 18.75vmin;
-    padding: 1.5625vmin 6.875vmin;
-    white-space: nowrap;
+    padding: 6.25vmin;
     width: 100%;
   }
 
@@ -989,6 +985,354 @@ body {
     width: 12.5vmin;
     height: 12.5vmin;
     margin-right: 3.125vmin;
+  }
+
+  .prof {
+    margin-top: 12.5vmin;
+  }
+
+  .prof__inner {
+    padding: 12.5vmin 0;
+  }
+
+  .prof__inner::before {
+    top: -5.3125vmin;
+    font-size: 22.5vmin;
+    line-height: 26.25vmin;
+  }
+
+  .prof__slider {
+    margin: 0 -5%;
+  }
+
+  .prof__item {
+    padding: 6.25vmin;
+    margin: 0 3.125vmin;
+    margin-top: 6.25vmin;
+  }
+
+  .prof__item-img {
+    margin: -6.25vmin -6.25vmin 0 -6.25vmin;
+  }
+
+  .prof__item-name {
+    margin-top: 6.25vmin;
+  }
+
+  .prof__item-descr {
+    margin-top: 4.6875vmin;
+    font-size: 3.75vmin;
+  }
+
+  .prof__item-date {
+    margin-top: 4.6875vmin;
+    font-size: 3.75vmin;
+  }
+
+  .prof__item-cost {
+    margin-top: 6.25vmin;
+    line-height: 9.375vmin;
+    font-size: 5vmin;
+  }
+  .prof__item-cost span {
+    font-size: 6.25vmin;
+  }
+
+  .prof__item-btn {
+    margin-top: 6.25vmin;
+    padding: 0vmin;
+  }
+
+  .slick-list {
+    overflow: visible;
+  }
+
+  .slick-track {
+    display: flex;
+  }
+
+  .slick-slide {
+    opacity: 0.5;
+  }
+
+  .slick-slide.slick-current {
+    opacity: 1;
+  }
+
+  .form--second {
+    margin-bottom: 4.6875vmin;
+  }
+
+  .form__inner {
+    padding: 12.5vmin 0;
+  }
+
+  .form__social {
+    margin-top: 4.6875vmin;
+    font-size: 5vmin;
+    line-height: 6.25vmin;
+  }
+
+  .form__item {
+    width: 100%;
+    margin: 3.125vmin 0;
+  }
+  .form__item .form__name,
+.form__item .form__tel {
+    padding-left: 6.25vmin;
+    height: 18.75vmin;
+  }
+  .form__item .form__input {
+    height: 18.75vmin;
+    font-size: 4.375vmin;
+    line-height: 6.25vmin;
+  }
+
+  .advantage__inner::before {
+    font-size: 16.5625vmin;
+    line-height: 15.625vmin;
+  }
+
+  .advantage__inner::after {
+    top: 57.8125vmin;
+    font-size: 8.4375vmin;
+    line-height: 11.25vmin;
+  }
+
+  .advantage__title {
+    width: 100%;
+    padding-top: 12.5vmin;
+  }
+
+  .advantage__items {
+    margin: 6.25vmin -3.125vmin 0 -3.125vmin;
+    padding-bottom: 12.5vmin;
+  }
+
+  .advantage__item {
+    width: 100%;
+    margin: 2.5vmin;
+    padding: 6.25vmin;
+  }
+
+  .advantage__item-desr {
+    margin-top: 3.125vmin;
+  }
+
+  .testimonials__review {
+    display: none;
+  }
+
+  .testimonials__inner {
+    padding: 9.375vmin 0;
+  }
+
+  .testimonials__item {
+    margin: 6.25vmin 3.125vmin 0 3.125vmin;
+    padding: 3.125vmin;
+  }
+
+  .testimonials__photo img {
+    width: 25vmin;
+    height: 25vmin;
+  }
+
+  .testimonials__photo::before,
+.testimonials__photo::after {
+    font-size: 15.625vmin;
+    line-height: 26.25vmin;
+  }
+
+  .testimonials__name {
+    margin-top: 3.125vmin;
+  }
+
+  .testimonials__prof {
+    font-size: 3.75vmin;
+    line-height: 6.25vmin;
+    margin-top: 1.5625vmin;
+    margin-bottom: 4.6875vmin;
+  }
+
+  .testimonials__works {
+    margin-top: 4.6875vmin;
+  }
+
+  .about {
+    margin-top: 9.375vmin;
+  }
+
+  .about__inner::before {
+    font-size: 20.3125vmin;
+    line-height: 15.625vmin;
+    top: -14.0625vmin;
+  }
+
+  .about__content {
+    margin: 12.5vmin 0 0 0;
+  }
+
+  .about__items {
+    width: 100%;
+  }
+
+  .about__item {
+    flex-direction: column;
+    width: 40%;
+  }
+
+  .about__item:nth-child(3),
+.about__item:nth-child(4) {
+    margin-top: 12.5vmin;
+  }
+
+  .about__item:nth-child(1),
+.about__item:nth-child(3) {
+    margin-right: 10%;
+  }
+
+  .about__item-img {
+    width: 12.5vmin;
+    height: 12.5vmin;
+    margin-right: 6.25vmin;
+  }
+
+  .about__descr {
+    width: 100%;
+    margin-top: 7.8125vmin;
+  }
+  .about__descr--name {
+    margin: 4.6875vmin 0;
+  }
+
+  .photo__inner {
+    padding: 12.5vmin 0;
+  }
+
+  .photo__descr {
+    margin: 4.6875vmin 0;
+  }
+
+  .photo__items {
+    margin: 0;
+  }
+
+  .photo__item {
+    margin: 0 3.125vmin;
+  }
+  .photo__item .photo__img {
+    width: 100%;
+    height: auto;
+  }
+
+  .photo__items .slick-slide {
+    opacity: 1;
+    width: 80vmin;
+  }
+
+  .form--second .text {
+    margin-top: 4.6875vmin;
+  }
+
+  .form__descr--second {
+    margin-top: 6.25vmin;
+  }
+
+  .form__inner--second::before {
+    font-size: 20.3125vmin;
+    line-height: 15.625vmin;
+  }
+
+  .map__head {
+    margin-top: 12.5vmin;
+  }
+
+  .map__head-title,
+.map__head-data {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .map__head-descr {
+    margin-top: 4.6875vmin;
+  }
+
+  .map__item {
+    margin-top: 6.25vmin;
+  }
+
+  .map__head-address {
+    margin-top: 4.6875vmin;
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin: 12.5vmin 0;
+  }
+  .gallery__item {
+    width: 33.3%;
+    height: auto;
+    margin-top: -0.3125vmin;
+    cursor: pointer;
+  }
+  .gallery__item:nth-child(10), .gallery__item:nth-child(11), .gallery__item:nth-child(12) {
+    display: none;
+  }
+
+  .footer {
+    padding: 12.5vmin 0;
+  }
+
+  .footer::before {
+    top: -1.5625vmin;
+    font-size: 9.375vmin;
+    line-height: 9.375vmin;
+  }
+
+  .footer__soc {
+    width: 100%;
+  }
+
+  .footer__soc-vk,
+.footer__soc-inst {
+    margin-right: 6.25vmin;
+    width: 12.5vmin;
+    height: 12.5vmin;
+  }
+
+  .footer__address {
+    width: 100%;
+    justify-content: start;
+  }
+  .footer__address .dl-link {
+    width: 87.5vmin;
+    font-size: 5vmin;
+    line-height: 6.25vmin;
+    text-align: left;
+    margin-top: 6.25vmin;
+    order: 1;
+  }
+  .footer__address .tel {
+    width: 62.5vmin;
+    font-size: 7.5vmin;
+    line-height: 9.375vmin;
+    text-align: left;
+    display: block;
+    margin-top: 6.25vmin;
+    order: 0;
+  }
+
+  .footer__copy {
+    margin-top: 12.5vmin;
+  }
+  .footer__copy-info {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__copy p {
+    margin-right: 12.5vmin;
   }
 }
 

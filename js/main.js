@@ -5,8 +5,18 @@ $(document).ready(function(){
         slidesToShow: 4,
         slidesToScroll: 1,
         arrows: true,
-        autoplay: true,
-        autoplaySpeed: 2000
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: true,
+              arrows: false,
+              centerMode: true
+            }
+          }
+        ]
       });
 
       $('.testimonials__slider').slick({
@@ -14,9 +24,41 @@ $(document).ready(function(){
         slidesToShow: 2,
         slidesToScroll: 1,
         arrows: true,
-        autoplay: true,
-        autoplaySpeed: 2000
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: true,
+              arrows: false,
+              centerMode: true
+            }
+          }
+        ]
       });
+
+      $('.photo__items').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: false,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: true,
+              centerMode: true
+            }
+          }
+        ]
+      });
+
+      
+
+
     
     //   menu 
       $('.burger').click(function(event) {
@@ -35,5 +77,9 @@ $(document).ready(function(){
         })
 
     })
+
+
+
+    $('article').readmore({ speed: 75, lessLink: '<a href="#">Read less</a>' });
 
   });
