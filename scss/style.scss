@@ -63,30 +63,71 @@ body{
 
 // button 
     .btn {
-        border: none;
-        font-family: $font-2;
+        cursor: pointer;
+        font-family: $font-1;
         font-weight: 600;
         font-size: vw(14);
-        line-height: vw(20);
+        line-height: vw(18);
         text-align: center;
         text-transform: uppercase;
-        color: #FFFFFF;
-        text-decoration: none;
+        transition: 0.6s;
+        padding: vw(5) vw(20);
         height: vw(60);
-        padding: 0 vw(25);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        color: white;
+        border: none;
+        position: relative;
+        box-shadow: 0px 16px 24px rgba(243, 170, 24, 0.16), 0px 6px 12px rgba(243, 170, 24, 0.16);
+        background: linear-gradient(100.12deg,#ff3d00 0,#ffc700 100%),#fff;
 
-        &--orange{
-            cursor: pointer;
+        
+
+        span{
             position: relative;
-            transition: .3s;
-            background: linear-gradient(91.83deg, #FF3D00 0%, #FFC700 100%), linear-gradient(91.83deg, #AD00FF 0%, #FF00C7 100%), #FFFFFF;
-            box-shadow: 0px 16px 24px rgba(243, 170, 24, 0.16), 0px 6px 12px rgba(243, 170, 24, 0.16);
-                        
+            display: flex;
+            min-height: 40px;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
         }
-    }
+        input{
+            display: none;
+        }
+
+      }
+      .btn::after,
+      .btn::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 5;
+        top: 0;
+        left: 0;
+        transition: all 0.6s;
+        opacity: 0;
+        z-index: 0;
+
+
+      }
+      .btn::before{
+        box-shadow: 0px 16px 24px rgba(243, 170, 24, 0.16), 0px 6px 12px rgba(243, 170, 24, 0.16);
+          background: linear-gradient(100.12deg,#ff3d00 0,#ffc700 100%),#fff;
+
+
+        
+       }
+       .btn::after{
+        box-shadow: 0px 16px 24px rgba(243, 170, 24, 0.16), 0px 6px 12px rgba(243, 170, 24, 0.16);
+        background: linear-gradient(100.12deg,#ffd130 0,#ff6b00 100%),#fff;
+
+       }
+       .btn:hover::after{
+           opacity: 1;
+       }
+
+       input{
+       }
+
 
 // header 
 .header {
@@ -135,10 +176,7 @@ body{
         margin-bottom: vw(15);
         width: 100%;
     }
-    .btn{
-        width: max-content;
-        margin: 0 auto;
-    }
+
     .text{
         font-size: vw(18);
         transition: all 0.3s;
@@ -187,7 +225,7 @@ body{
         position: absolute;
         right: 0;
         width: 100%;
-        height: vw(3);
+        height: vw(2);
         transition: all 0.3s;
     }
     &::before{
@@ -203,7 +241,7 @@ body{
         top: 50%;
         transform: translateY(-50%);
         width: vw(23);
-        height: vw(3);
+        height: vw(2);
         transition: all 0.3s;
     }
     &:hover {
@@ -244,11 +282,11 @@ body{
     justify-content: space-between;
 
     margin-top: vw(100);
-    .btn{
-        margin-top: vw(20);
-    }
     .title{
         margin-top: vw(40);
+    }
+    .btn{
+        margin-top: vw(34);
     }
 }
 .header__title {
@@ -352,12 +390,7 @@ body{
         font-size: vw(20);
     }
 }
-.prof__item-btn{
-    margin-top: vw(20);
 
-
-
-}
 
 // slider 
 .prof__slider {
@@ -455,28 +488,6 @@ body{
         background: #fff;
     }
 
-    .form__input{
-        width: 100%;
-        height: vw(60);
-        border: none;
-
-        border: none;
-        font-family: $font-2;
-        font-weight: 600;
-        font-size: vw(14);
-        line-height: vw(20);
-        text-align: center;
-        text-transform: uppercase;
-        color: #FFFFFF;
-        transition: all 0.2s;
-
-        text-align: center;
-        color: #FFFFFF;
-
-
-
-
-    }
 
 }
 
@@ -976,12 +987,7 @@ max-width: 30%;
     background-color: #fff;
     position: relative;
     
-    .btn{
-        width: max-content;
-        padding-right: vw(40);
-        padding-left: vw(40);
-        margin-top: vw(25);
-    }
+
 }
 .popup__close {
     width: vw(21);
@@ -1002,11 +1008,7 @@ max-width: 30%;
     .popup__content {
         padding: vmin(50) vmin(20) vmin(20) vmin(20);
         margin: vmin(20);
-        .btn{
-            padding-right: vmin(40);
-            padding-left: vmin(40);
-            margin-top: vmin(25);
-        }
+
     }
     .popup__close {
         width: vmin(21);
