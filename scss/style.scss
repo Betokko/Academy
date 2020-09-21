@@ -64,6 +64,7 @@ body{
 // button 
     .btn {
         cursor: pointer;
+        margin-top: vw(15);
         font-family: $font-1;
         font-weight: 600;
         font-size: vw(14);
@@ -187,11 +188,12 @@ body{
 }
 .click{
     position: relative;
+    text-align: center;
 }
 .click::before{
     content: ".click{}";
     position: absolute;
-    top: -100%;
+    top: -70%;
     left: 50%;
     transform: translateX(-50%);
 

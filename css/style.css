@@ -50,6 +50,7 @@ body {
 
 .btn {
   cursor: pointer;
+  margin-top: 1.0714285714vw;
   font-family: "Lato", sans-serif;
   font-weight: 600;
   font-size: 1vw;
@@ -159,12 +160,13 @@ body {
 
 .click {
   position: relative;
+  text-align: center;
 }
 
 .click::before {
   content: ".click{}";
   position: absolute;
-  top: -100%;
+  top: -70%;
   left: 50%;
   transform: translateX(-50%);
   font-family: "Lato", sans-serif;
@@ -977,21 +979,28 @@ body {
   }
 
   .btn {
-    font-family: "Lato", sans-serif;
+    cursor: pointer;
+    margin-top: 4.6875vmin;
     font-size: 4.375vmin;
-    line-height: 6.25vmin;
+    line-height: 5.625vmin;
+    padding: 1.5625vmin 6.25vmin;
     height: 18.75vmin;
-    padding: 6.25vmin;
-    width: 100%;
+    box-shadow: 0px 16px 24px rgba(243, 170, 24, 0.16), 0px 6px 12px rgba(243, 170, 24, 0.16);
+    background: linear-gradient(100.12deg, #ff3d00 0, #ffc700 100%), #fff;
+  }
+  .btn span {
+    position: relative;
+    display: flex;
+    min-height: 12.5vmin;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
   }
 
   .header__top {
     padding-top: 12.5vmin;
   }
 
-  .nav__btn {
-    bottom: 20.3125vmin;
-  }
   .nav__item {
     margin-bottom: 4.6875vmin;
   }
@@ -1006,7 +1015,7 @@ body {
   .click::before {
     content: ".click{}";
     position: absolute;
-    top: -100%;
+    top: -70%;
     left: 50%;
     transform: translateX(-50%);
     font-size: 22.5vmin;
@@ -1019,11 +1028,11 @@ body {
   }
   .burger::before, .burger::after {
     content: "";
-    height: 0.9375vmin;
+    height: 0.625vmin;
   }
   .burger span {
     width: 7.1875vmin;
-    height: 0.9375vmin;
+    height: 0.625vmin;
   }
   .burger:hover::before, .burger:hover::after {
     width: 7.1875vmin;
@@ -1039,9 +1048,6 @@ body {
   .header__mid {
     margin-top: vvminw(100);
     flex-direction: column;
-  }
-  .header__mid .btn {
-    margin-top: 6.25vmin;
   }
   .header__mid .title {
     margin-top: 12.5vmin;
@@ -1129,11 +1135,6 @@ body {
   }
   .prof__item-cost span {
     font-size: 6.25vmin;
-  }
-
-  .prof__item-btn {
-    margin-top: 6.25vmin;
-    padding: 0vmin;
   }
 
   .slick-list {
